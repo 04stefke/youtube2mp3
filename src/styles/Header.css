@@ -1,3 +1,10 @@
+.header-component{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-block: 5rem;
+}
 .logo{
     width: 80px;
     border-radius: 100%;
