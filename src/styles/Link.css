@@ -19,3 +19,7 @@
 .music-anchor-btn button:hover{
     background-color: #00009e;
 }
+
+.loading iframe{
+    border: 0;
+}
