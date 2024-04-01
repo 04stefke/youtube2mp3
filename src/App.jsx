@@ -5,13 +5,18 @@ import Input from "./components/Input";
 import Link from "./components/Link";
 
 function App() {
-	const [downloadLink, setDownloadLink] = useState(null)
-	const [loading, setLoading] = useState(false)
+	const [downloadLink, setDownloadLink] = useState(null);
+	const [loading, setLoading] = useState(false);
 	return (
 		<div className="app-component">
 			<Header />
-			<Input setDownloadLink={setDownloadLink} setLoading={setLoading}/>
-			<Link downloadLink={downloadLink} loading={loading}/>
+			<Input setDownloadLink={setDownloadLink} setLoading={setLoading} />
+			<Link
+				downloadLink={downloadLink}
+				loading={loading}
+				setDownloadLink={setDownloadLink}
+				setLoading={setLoading}
+			/>
 		</div>
 	);
 }

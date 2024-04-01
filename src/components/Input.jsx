@@ -29,6 +29,7 @@ const Input = ({ setDownloadLink, setLoading }) => {
 						className="link-input"
 						placeholder="Enter a Youtube URL"
 						onChange={saveTerm}
+						value={term}
 					/>
 					<button type="submit">Convert</button>
 				</div>
