@@ -9,3 +9,34 @@
     width: 80px;
     border-radius: 100%;
 }
+
+@media screen and (max-width: 600px) {
+    .header-component{
+        gap: 1.5rem;
+        margin-block: 3rem;
+    }
+    .logo{
+        width: 65px;
+    }
+    .app-title h1{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header-component{
+        gap: 0.5rem;
+        
+    }
+
+}
+@media screen and (max-width: 300px) {
+    .header-component{
+        gap: 0.5rem;
+        
+    }
+    .app-title h1{
+        font-size: 24px;
+    }
+
+}

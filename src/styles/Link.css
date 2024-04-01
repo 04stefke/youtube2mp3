@@ -23,3 +23,10 @@
 .loading iframe{
     border: 0;
 }
+
+@media screen and (max-width: 600px) {
+    .music-wrapper{
+        text-align: center;
+        margin-inline: 1rem;
+    }
+}

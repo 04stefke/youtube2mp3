@@ -21,13 +21,13 @@
 	width: 600px;
 }
 
-.link-input:hover{
-    border-color: #0000d8;
+.link-input:hover {
+	border-color: #0000d8;
 }
 
-.input-wrapper{
-    display: flex;
-    gap: 1rem;
+.input-wrapper {
+	display: flex;
+	gap: 1rem;
 }
 
 .input-wrapper button {
@@ -36,26 +36,40 @@
 	border: none;
 	background-color: #0000ff;
 	color: white;
-    font-size: 20px;
-    cursor: pointer;
+	font-size: 20px;
+	cursor: pointer;
 }
 
-.input-wrapper button:hover{
-    background-color: #00009e;
+.input-wrapper button:hover {
+	background-color: #00009e;
 }
 
 @media screen and (max-width: 800px) {
-	.link-input{
+	.link-input {
 		width: 400px;
 	}
 }
 
 @media screen and (max-width: 600px) {
-	.link-input{
+	.input-wrapper {
+		flex-direction: column;
+		gap: 4rem;
+	}
+	.link-input {
 		padding: 0.5rem;
 		width: 300px;
 	}
 	.input-wrapper button {
 		padding: 0.5rem 1rem;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	.input-form{
+		justify-content: center;
+		align-items: center;
+	}
+	.link-input{
+		width: 100%;
 	}
 }

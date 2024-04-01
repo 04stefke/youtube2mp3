@@ -17,3 +17,9 @@ body{
 	gap: 5rem;
 }
 
+@media screen and (max-width: 800px) {
+	.app-component{
+		gap: 3rem;
+	}
+}
+
