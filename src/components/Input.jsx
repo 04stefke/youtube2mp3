@@ -9,7 +9,7 @@ const Input = () => {
 					Please Insert A Valid Youtube Music Url
 				</label>
 				<div className="input-wrapper">
-					<input type="text" id="link-input" className="link-input" />
+					<input type="text" id="link-input" className="link-input" placeholder="Enter a Youtube URL"/>
 					<button type="submit">Convert</button>
 				</div>
 			</form>
