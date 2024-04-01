@@ -4,12 +4,16 @@
 	margin: 0;
 }
 
-.app-component {
+body{
 	width: 100vw;
 	height: 100vh;
-    
 }
 
-.app-title{
-
+.app-component {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 5rem;
 }
+

@@ -1,0 +1,45 @@
+.input-component {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.input-form {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.link-input {
+	outline: none;
+	border: 1px solid #4a4aff;
+	border-radius: 10px;
+	padding: 1rem;
+	font-size: 20px;
+	width: 600px;
+}
+
+.link-input:hover{
+    border-color: #0000d8;
+}
+
+.input-wrapper{
+    display: flex;
+    gap: 1rem;
+}
+
+.input-wrapper button {
+	padding: 1rem 2rem;
+	border-radius: 5px;
+	border: none;
+	background-color: #0000ff;
+	color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.input-wrapper button:hover{
+    background-color: #00009e;
+}
