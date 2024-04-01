@@ -2,15 +2,17 @@ import React, { useEffect, useState } from "react";
 import "../styles/Input.css";
 import { getDownloadLink } from "../api/api";
 
-const Input = ({ setDownloadLink }) => {
+const Input = ({ setDownloadLink, setLoading }) => {
 	const [term, setTerm] = useState("");
 
 	const saveTerm = (e) => setTerm(e.target.value);
 
 	const handleOnSubmit = async (e) => {
 		e.preventDefault();
+		setLoading(true);
 		const linkData = await getDownloadLink(term);
 		setDownloadLink(linkData);
+		setLoading(false);
 		setTerm("");
 	};
 

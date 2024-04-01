@@ -6,12 +6,12 @@ import Link from "./components/Link";
 
 function App() {
 	const [downloadLink, setDownloadLink] = useState(null)
-	console.log(downloadLink);
+	const [loading, setLoading] = useState(false)
 	return (
 		<div className="app-component">
 			<Header />
-			<Input setDownloadLink={setDownloadLink}/>
-			<Link downloadLink={downloadLink}/>
+			<Input setDownloadLink={setDownloadLink} setLoading={setLoading}/>
+			<Link downloadLink={downloadLink} loading={loading}/>
 		</div>
 	);
 }

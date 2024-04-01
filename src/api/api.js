@@ -1,20 +1,16 @@
 import axios from "axios";
 
 export const getDownloadLink = async (term) => {
-
 	const options = {
-		method: "POST",
-		url: "https://youtube-to-mp315.p.rapidapi.com/download",
+		method: "GET",
+		url: "https://youtube-mp3-downloader2.p.rapidapi.com/ytmp3/ytmp3/",
 		params: {
 			url: `${term}`,
-			format: "mp3",
 		},
 		headers: {
-			"content-type": "application/json",
 			"X-RapidAPI-Key": "6b5facca86msh63cc9bea7d58a4ep1cbfaejsn89bd9133e33a",
-			"X-RapidAPI-Host": "youtube-to-mp315.p.rapidapi.com",
+			"X-RapidAPI-Host": "youtube-mp3-downloader2.p.rapidapi.com",
 		},
-		data: {},
 	};
 
 	try {
@@ -22,6 +18,5 @@ export const getDownloadLink = async (term) => {
 		return response.data;
 	} catch (error) {
 		console.error(error);
-        return null;
 	}
 };
