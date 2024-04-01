@@ -1,0 +1,21 @@
+.music-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.music-anchor-btn button{
+	padding: 1rem 2rem;
+	border-radius: 5px;
+	border: none;
+	background-color: #0000ff;
+	color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.music-anchor-btn button:hover{
+    background-color: #00009e;
+}
