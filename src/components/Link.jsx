@@ -5,7 +5,7 @@ const Link = ({ downloadLink, loading }) => {
 	return (
 		<div className="link-component">
 			{loading ? (
-				<div className="loading"> <iframe src={loader} frameborder="0"></iframe></div>
+				<div className="loading"> <iframe src={loader}></iframe></div>
 			) : (
 				downloadLink && (
 					<div className="music-wrapper">

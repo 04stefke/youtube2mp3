@@ -1,15 +1,18 @@
 import axios from "axios";
+const url = import.meta.env.VITE_RAPIDAPI_URL;
+const key = import.meta.env.VITE_RAPIDAPI_KEY;
+const host = import.meta.env.VITE_RAPIDAPI_HOST;
 
 export const getDownloadLink = async (term) => {
 	const options = {
 		method: "GET",
-		url: "https://youtube-mp3-downloader2.p.rapidapi.com/ytmp3/ytmp3/",
+		url: url,
 		params: {
 			url: `${term}`,
 		},
 		headers: {
-			"X-RapidAPI-Key": "6b5facca86msh63cc9bea7d58a4ep1cbfaejsn89bd9133e33a",
-			"X-RapidAPI-Host": "youtube-mp3-downloader2.p.rapidapi.com",
+			"X-RapidAPI-Key": key,
+			"X-RapidAPI-Host": host,
 		},
 	};
 
