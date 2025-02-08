@@ -8,7 +8,7 @@ export const getDownloadLink = async (term) => {
 		method: "GET",
 		url: url,
 		params: {
-			url: `${term}`,
+			url: term,
 		},
 		headers: {
 			"X-RapidAPI-Key": key,
@@ -18,8 +18,9 @@ export const getDownloadLink = async (term) => {
 
 	try {
 		const response = await axios.request(options);
-		return response.data;
+		return response.request.responseURL;
 	} catch (error) {
 		console.error(error);
+		return {}
 	}
 };

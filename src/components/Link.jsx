@@ -5,24 +5,24 @@ const Link = ({ downloadLink, setDownloadLink, loading, setLoading }) => {
 	const handleReset = () => {
 		setTimeout(() => {
 			setDownloadLink(null);
-			setLoading(false); 
-		}, 100); 
+			setLoading(false);
+		}, 100);
 	};
+	console.log(downloadLink);
 	return (
 		<div className="link-component">
 			{loading ? (
 				<div className="loading">
-					{" "}
-					<iframe src={loader} title="Loading"></iframe>
+					<img src={loader} title="Loading"></img>
 				</div>
 			) : (
 				downloadLink && (
 					<div className="music-wrapper">
 						<h2 className="music-title">
-							{downloadLink.title || "Download Ready"}
+							{downloadLink || "Download Ready"}
 						</h2>
 						<a
-							href={downloadLink.link}
+							href={downloadLink}
 							download
 							target="_blank"
 							rel="noopener noreferrer"
