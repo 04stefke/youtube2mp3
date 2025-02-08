@@ -19,10 +19,10 @@ const Link = ({ downloadLink, setDownloadLink, loading, setLoading }) => {
 				downloadLink && (
 					<div className="music-wrapper">
 						<h2 className="music-title">
-							{downloadLink || "Download Ready"}
+							{downloadLink.title || "Download Ready"}
 						</h2>
 						<a
-							href={downloadLink}
+							href={downloadLink.link}
 							download
 							target="_blank"
 							rel="noopener noreferrer"
