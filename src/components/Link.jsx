@@ -8,7 +8,6 @@ const Link = ({ downloadLink, setDownloadLink, loading, setLoading }) => {
 			setLoading(false);
 		}, 100);
 	};
-	console.log(downloadLink);
 	return (
 		<div className="link-component">
 			{loading ? (
