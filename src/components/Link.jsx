@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/Link.css";
 import loader from "../assets/bouncing-circles.svg";
+import "../styles/Link.css";
 const Link = ({ downloadLink, setDownloadLink, loading, setLoading }) => {
 	const handleReset = () => {
 		setTimeout(() => {
